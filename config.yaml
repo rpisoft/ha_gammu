@@ -1,0 +1,28 @@
+name: HA Gammu SMS
+version: "0.85"
+slug: ha_gammu
+description: Gammu SMS fixed ID modem
+url: https://github.com/yamestest/ha_gammu
+logo: "gammu.png"
+icon: "gammu.png"
+arch:
+  - amd64
+  - armv7
+  - armhf
+  - aarch64
+startup: services
+boot: auto
+usb: true
+init: false
+homeassistant_api: true
+host_network: true
+options:
+  device: /dev/serial/by-id/usb-HUAWEI_MOBILE_HUAWEI_MOBILE-if00-port0
+schema:
+  device: str
+privileged:
+  - SYS_RAWIO
+devices:
+  - /dev/serial/by-id/usb-HUAWEI_MOBILE_HUAWEI_MOBILE-if00-port0
+map:
+  - addon_config:rw
