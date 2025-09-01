@@ -3,8 +3,6 @@ version: "0.85"
 slug: ha_gammu
 description: Gammu SMS fixed ID modem
 url: https://github.com/yamestest/ha_gammu
-logo: "gammu.png"
-icon: "gammu.png"
 arch:
   - amd64
   - armv7
